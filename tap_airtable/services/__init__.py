@@ -188,9 +188,12 @@ class Airtable(object):
 
     @classmethod
     def _find_column(cls, col, meta_data):
+        cls.logger.info("metadata: "+str(meta_data)) 
         for m in meta_data:
             if "breadcrumb" in m and "properties" in m["breadcrumb"] and m["breadcrumb"][1] == col:
-                return m["metadata"]["real_name"]
+                if "real_name" in m["metadata"].keys():
+                    cls.logger.info("metadata: "+str(m)) 
+                    return m["metadata"]["real_name"]
 
     @classmethod
     def run_sync(cls, config, properties):
