@@ -1,6 +1,6 @@
-![AIME](https://d2ylaz7bdw65jx.cloudfront.net/assets/images/aime-logo.svg)
+# Tap Airtable customized by [Scalefree International GmbH](https://www.scalefree.com)
 
-# Tap Airtable
+<img src="https://user-images.githubusercontent.com/78537603/191483803-8cd4fc72-54a1-45f6-ab39-d798ec83e4c9.jpg" width=50% align=right>
 
 [Singer](https://www.singer.io/) tap that extracts data from a [AirTable](https://airtable.com/api) database and produces JSON-formatted data following the [Singer spec](https://github.com/singer-io/getting-started/blob/master/docs/SPEC.md).
 
